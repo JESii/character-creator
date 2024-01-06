@@ -4,6 +4,7 @@
 }
 
 .maxWidthWrapper {
+  max-width: 48%;
 }
 
 .header {
@@ -24,6 +25,22 @@
 }
 
 .characterWrapper {
+  /* Once I set this position: fixed,
+   * the image displays correctly,
+   * but now all the buttons are broken
+   * why is that?
+   * RESOLVED: just have to refresh the page
+   */
+  position: fixed;
+  top: 150px;
+  left: 60%;
+  bottom: 0;
+  max-width: 50%;
+  /* If I do not set this min-width value,
+   * the element collapses to 0 width!
+   * why is that?!
+   */
+  min-width: 45%;
 }
 
 .controlColumn {
